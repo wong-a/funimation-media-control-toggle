@@ -1,0 +1,15 @@
+{
+  "name": "Funimation Media Control Toggle",
+  "description": "Adds a toggle to disable the controls on the funimation.com video player",
+  "version": "1.0",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.funimation.com/*"],
+      "js": ["src/index.js"]
+    }
+  ],
+  "manifest_version": 2
+}
